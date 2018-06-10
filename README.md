@@ -1,0 +1,2 @@
+# ZarinPalASPNETCore
+درگاه پرداخت زرین‌پال
