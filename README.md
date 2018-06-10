@@ -79,6 +79,7 @@ email: اختیاری
 mobile: اختیاری
 
 خروجی این تابع همانند تابع PaymentRequest می باشد.
+
 نام تابع VerificationWithExtra
 ------
 <div dir="ltr">
@@ -94,6 +95,7 @@ authority: authority بعد از ارسال درخواست پرداخت به ش�
 خروجی :
 
 Status, RefId, ExtraDetail
+
 تمدید شناسه authority
 ------
 <div dir="ltr">
