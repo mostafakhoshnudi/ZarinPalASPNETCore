@@ -58,7 +58,7 @@ authority: authority بعد از ارسال درخواست پرداخت به ش�
 خروجی :
 Status, RefId
 
-تابع PaymentRequestWithExtra:
+تابع PaymentRequestWithExtra
 ------
 <div dir="ltr">
   
@@ -79,58 +79,50 @@ email: اختیاری
 mobile: اختیاری
 
 خروجی این تابع همانند تابع PaymentRequest می باشد.
-
-
-اعتبار سنجی تابع PaymentRequestWithExtra:
-
-
-نام تابع VerificationWithExtra:
-
-
+نام تابع VerificationWithExtra
+------
+<div dir="ltr">
+  
+```c#
 var result = payment.VerificationWithExtra(authority)
+```
+</div>
+ورودی ها :
 
+authority: authority بعد از ارسال درخواست پرداخت به شما بازگشت داده میشود که مقدار آن را در این تابع قرار می دهید.
 
 خروجی :
 
-
 Status, RefId, ExtraDetail
-
-
-
-
-
-تمدید شناسه authority:
-
-
+تمدید شناسه authority
+------
+<div dir="ltr">
+  
+```c#
 var refresh = await new Zarinpal.Refresh("YourMerchantId");
-
-
 refresh.Authority(authority, expireIn);
+```
+</div>
+ورودی ها :
 
+authority: authority بعد از ارسال درخواست پرداخت به شما بازگشت داده میشود که مقدار آن را در این تابع قرار می دهید.
 
 expireIn: زمان تمدید به ثانیه
 
-
-
-
-
-بازیابی تراکنش های ناموفق:
-
-
+بازیابی تراکنش های ناموفق
+------
+<div dir="ltr">
+  
+```c#
 var get = await new Zarinpal.Get("YourMerchantId");
-
-
 var result =  get.UnverifiedTransactions()
-
-
+```
+</div>
 خروجی:
-
 
 Status
 
-
 Authorities
-
 
 </div>
 
